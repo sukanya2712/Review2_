@@ -20,7 +20,7 @@ public class ArrayRepeatingDistinct {
         for (int i=0;i<arr.length;i++){
             int count =1;
             if (arrd[i]!=visited){
-                for (int k=i+1;k<arr.length-1;k++){
+                for (int k=i+1;k<arr.length;k++){
                     if (arr[i] == arr[k]){
                         count++;
                         arrd[k]=visited;
@@ -37,14 +37,14 @@ public class ArrayRepeatingDistinct {
             }
         }
 
-        //repetitive element
-        for(int i=0;i<arr.length;i++){
-            for (int j=0;j<arr.length;j++){
-                if (arr[i]==arr[j]){
-                    System.out.println(arr[i]);
-                }
+
+        System.out.println(" repetive elemnt");
+        for (int i=0;i<arrd.length;i++){
+            if(arrd[i]!=1){
+                System.out.println(arr[i]);
             }
         }
+
 
     }
     public static void main(String[] args) {
